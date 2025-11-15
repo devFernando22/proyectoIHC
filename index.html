@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridia | Naturaleza con Impacto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAVBAR ========== -->
+
+    <header class="header">
+      <div class="container header-container">
+        <a href="#Inicio" class="logo">
+          <img src="imagenes/veridiaperu_logo.jpg" alt="Logo Veridia" />
+        </a>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#Sostenibilidad">Sostenibilidad</a></li>
+            <li><a href="#Contactanos">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== SECCIÓN INICIO ========== -->
+    <section id="Inicio" class="inicio">
+      <div class="container inicio-content">
+        <div class="inicio-texto">
+          <h1>Conecta con la Naturaleza desde tu Hogar</h1>
+          <p>
+            En Veridia promovemos un estilo de vida sostenible, ofreciendo
+            plantas, macetas y accesorios que transforman tus espacios y generan
+            un impacto positivo en el planeta.
+          </p>
+          <button class="btn-principal" onclick="location.href='#Productos'">
+            Explora nuestros productos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN PRODUCTOS ========== -->
+    <section id="Productos" class="productos">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <p class="subtexto">
+          Descubre nuestras colecciones ecológicas diseñadas para ti.
+        </p>
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="imagenes/plantas.jpg" alt="Plantas decorativas" />
+            <h3>Plantas decorativas</h3>
+            <p>
+              Purifica tu ambiente con especies cuidadosamente seleccionadas.
+            </p>
+          </div>
+          <div class="producto">
+            <img src="imagenes/macetas.jpg" alt="Macetas sostenibles" />
+            <h3>Macetas sostenibles</h3>
+            <p>Hechas con materiales biodegradables y diseños únicos.</p>
+          </div>
+          <div class="producto">
+            <img src="imagenes/kits.jpg" alt="Kits de cultivo" />
+            <h3>Kits de cultivo</h3>
+            <p>Ideal para principiantes que desean cultivar en casa.</p>
+          </div>
+          <div class="producto">
+            <img src="imagenes/accesorios.jpg" alt="Accesorios ecológicos" />
+            <h3>Accesorios ecológicos</h3>
+            <p>Complementos prácticos que respetan el medio ambiente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN SOSTENIBILIDAD ========== -->
+    <section id="Sostenibilidad" class="sostenibilidad">
+      <div class="container">
+        <h2>Compromiso con la Sostenibilidad</h2>
+        <div class="sostenibilidad-content">
+          <div class="texto">
+            <p>
+              En Veridia creemos que cada acción cuenta. Por ello, cada compra
+              contribuye a programas de reforestación, reducción de residuos
+              plásticos y apoyo a viveros locales comprometidos con la
+              biodiversidad.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/EH4VTCkO4yk"
+              title="Sostenibilidad Veridia"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN CONTACTO / FORMULARIO ========== -->
+    <section id="Contactanos" class="contacto">
+      <div class="container contacto-container">
+        <h2>Contáctanos</h2>
+        <p>Completa el formulario y te responderemos a la brevedad.</p>
+
+        <form class="formulario">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                placeholder="Ej. María López"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="ejemplo@correo.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pais">País</label>
+              <select id="pais" required>
+                <option value="">Seleccione un país</option>
+                <option value="peru">Perú</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Género</label>
+              <div class="opciones-radio">
+                <label
+                  ><input type="radio" name="genero" value="masculino" />
+                  Masculino</label
+                >
+                <label
+                  ><input type="radio" name="genero" value="femenino" />
+                  Femenino</label
+                >
+                <label
+                  ><input type="radio" name="genero" value="otro" /> Otro</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group intereses">
+            <label>Intereses</label>
+            <div class="opciones-checkbox">
+              <label><input type="checkbox" /> Plantas decorativas</label>
+              <label><input type="checkbox" /> Kits de cultivo</label>
+              <label><input type="checkbox" /> Macetas ecológicas</label>
+            </div>
+          </div>
+
+          <div class="form-group mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-principal">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="imagenes/veridiaperu_logo.jpg"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>VERIDIA</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+
+            <a href="Documentos/LeyProteccionDatos.pdf" target="_blank">
+              Política de Privacidad
+            </a>
+
+            <a href="Documentos/LeyProteccionDatos.pdf" target="_blank">
+              Términos y Condiciones
+            </a>
+
+            <a href="Documentos/LeyProteccionDatos.pdf" target="_blank">
+              Protección de Datos
+            </a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
